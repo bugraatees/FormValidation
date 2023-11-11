@@ -12,40 +12,39 @@
         <h3>Form Örneği</h3>
         <ul>
             <li>
-                <label>Kullanıcı Adı</label>
-                <input type="text" name="username" required>
+                <label>Kullanıcı Adı : </label>
+                <input id="input" type="text" name="username" required>
             </li>
             <li>
-                <label>Eposta Adresiniz</label>
-                <input type="email" name="email" required>
+                <label>Eposta Adresiniz : </label>
+                <input id="input" type="email" name="email" required>
             </li>
             <li>
-                <label>Şifreniz</label>
-                <input type="password" name="password" required>
+                <label>Şifreniz :</label>
+                <input id="input" type="password" name="password" required>
             </li>
             <li>
-                <label>Github Adresin</label>
-                <input type="url" name="github_url" required>
+                <label>Github Adresin :</label>
+                <input id="input" type="url" name="github_url" required>
             </li>
             <li>
-                <label>Fotoğrafın</label>
+                <label>Fotoğrafın :</label>
                 <input type="file" name="photo" required>
             </li>
             <li>
-                <label>Cinsiyet</label>
+                <label>Cinsiyet : </label>
                 <div class = "radio-container">
                     <input type="radio" required name="gender" value="1">Erkek
                     <input type="radio" required name="gender" value="2">Kadın
                 </div>
             </li>
             <li>
-                <label>Hobileriniz</label>
                 <div class = "radio-container">
                     <input type = "checkbox" name = "hobby" required value="Bisiklete Binmek" > Kuralları okudum ve kabul ediyorum.
                 </div>
             </li>
             <li>
-                <label>Bilgi Düzeyiniz</label>
+                <label>Bilgi Düzeyiniz : </label>
                 <select name="knownledge" required>
                     <option value="">Seçiniz</option>
                     <option value="1">İyi Düzeyde</option>
@@ -54,11 +53,11 @@
                 </select>
             </li>
             <li>
-                <label>Hakkınızda</label>
+                <label>Hakkınızda : </label>
                 <textarea name="about" cols="30" rows="5" required></textarea>
             </li>
             <li>
-                <button type="submit">Gönder</button>
+                <button  type="submit">Gönder</button>
             </li>
         </ul>
     </form>
@@ -66,8 +65,8 @@
     <form action="ajax2.php" id="form2" class="form"  novalidate>
         <ul>
             <li>
-                <label>IBAN</label>
-                <input type="text" pattern="[0-9]{5}" name="iban" required>
+                <label>IBAN : </label>
+                <input id="input" type="text" pattern="[0-9]{5}" name="iban" required>
             </li>
             <li>
                 <button type="submit" >Gönder</button>
