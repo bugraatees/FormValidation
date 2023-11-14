@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=".\index.css" >
+    <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <a href="http://bugraates.com.tr/" id="back-button">Geri Dön</a>
+    </header>
+
     <form action="ajax.php" class="form" id="form1" novalidate>
         <h3>Form Örneği</h3>
         <ul>
@@ -33,14 +39,15 @@
             </li>
             <li>
                 <label>Cinsiyet : </label>
-                <div class = "radio-container">
+                <div class="radio-container">
                     <input type="radio" required name="gender" value="1">Erkek
                     <input type="radio" required name="gender" value="2">Kadın
                 </div>
             </li>
             <li>
-                <div class = "radio-container">
-                    <input type = "checkbox" name = "hobby" required value="Bisiklete Binmek" > Kuralları okudum ve kabul ediyorum.
+                <div class="radio-container">
+                    <input type="checkbox" name="hobby" required value="Bisiklete Binmek"> Kuralları okudum ve kabul
+                    ediyorum.
                 </div>
             </li>
             <li>
@@ -57,25 +64,26 @@
                 <textarea name="about" cols="30" rows="5" required></textarea>
             </li>
             <li>
-                <button  type="submit">Gönder</button>
+                <button type="submit">Gönder</button>
             </li>
         </ul>
     </form>
 
-    <form action="ajax2.php" id="form2" class="form"  novalidate>
+    <form action="ajax2.php" id="form2" class="form" novalidate>
         <ul>
             <li>
                 <label>IBAN : </label>
                 <input id="input" type="text" pattern="[0-9]{5}" name="iban" required>
             </li>
             <li>
-                <button type="submit" >Gönder</button>
+                <button type="submit">Gönder</button>
             </li>
         </ul>
     </form>
 
     <script src=".\validation.js"></script>
-    <script src=".\index.js"></script>
-    
+    <script src=".\form.js"></script>
+
 </body>
+
 </html>
