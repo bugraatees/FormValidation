@@ -7,27 +7,31 @@
     outline: 0;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+
 }
 
 body {
-    background: white;
-    color: gray;
+    background:#729c9a;
+    color: #13181b;
 }
+
 
 input :not([type="checkbox"]):not([type="radio"]) {
     width: 100%;
     height: 40px;
     border-bottom: 1px solid rgba( #fff,.3);
     background: transparent;
-    color: #fff;
+    color: #ba2828;
     font-size: 2px;
     &:focus {
-        border-color: rgb(#fff,.6);
+        border-color: rgb(#383d33,.6);
     }
 }
 #input {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #383d33;
+    width: 50%;
+    padding: 1%;
 }
 
 select option {
@@ -35,9 +39,9 @@ select option {
 }
 
 textarea {
-    width: 90%;
+    width: 70%;
     border-bottom: 1px solid rgba(#fff,.3);
-    background: black;
+    background: white;
     color: gray;
     font-size: 16px;
     padding: 10px 0;
@@ -70,6 +74,7 @@ ul {
         color: rgba( #fff,.8);
         margin-bottom: 10px;
         display: inline;
+        color: #383d33;
     }
     .error-msg {
         font-size: 12px;
@@ -80,14 +85,14 @@ ul {
 }
 li {
     &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 }
 h3 {
     font-size: 30px;
     margin-bottom: 30px;
     font-weight: 600;
-    color:black ;
+    color:#00614f ;
     font-weight: bold;
 }
 
